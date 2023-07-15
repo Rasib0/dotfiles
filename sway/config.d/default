@@ -244,7 +244,6 @@ bindsym Print+r mode "resize"
 
     bindsym $mod+u exec vivaldi-stable https:github.com
     bindsym $mod+Shift+u exec vivaldi-stable http:://localhost:3000
-# i need to bind anki and 
     bindsym $mod+o exec vivaldi-stable https://outlook.office.com/mail/inbox
     bindsym $mod+Shift+o exec vivaldi-stable https://gmail.com
 
@@ -260,7 +259,7 @@ bindsym Print+r mode "resize"
 
     
     bindsym $mod+m exec anki
-    bindsym $mod+Shift+m exec obsidian 
+    bindsym $mod+Shift+m exec obsidian
     bindsym $mod+z focus child
 # Screenshots
     # bindsym print exec /usr/share/sway/scripts/grimshot --notify save output

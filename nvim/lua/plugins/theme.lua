@@ -1,6 +1,7 @@
 return {
-    { "ellisonleao/gruvbox.nvim" },
-    { "Mofiqul/vscode.nvim",
+  { "ellisonleao/gruvbox.nvim" },
+  {
+    "Mofiqul/vscode.nvim",
     -- opts = {
     --   transparent = true,
     --   styles = {
@@ -8,8 +9,8 @@ return {
     --     floats = "transparent",
     --   },
     -- },
-   },
-   {
+  },
+  {
     "folke/tokyonight.nvim",
     opts = {
       transparent = true,
@@ -19,11 +20,12 @@ return {
       },
     },
   },
-  
-    { "LazyVim/LazyVim", opts = {
-      colorscheme = "vscode",
-      }
-    }
-  }
-  
 
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "vscode",
+      -- colorscheme = "tokyonight",
+    },
+  },
+}

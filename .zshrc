@@ -106,10 +106,15 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
  alias zshconfig="$EDITOR ~/.zshrc"
+ alias i3config="$EDITOR ~/.config/i3/config"
  alias nvimconfig="$EDITOR ~/.config/nvim/"
  alias tmuxconfig="$EDITOR ~/.tmux.conf"
  alias swayconfig="$EDITOR ~/.config/sway/"
  alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
+
+ function touchp() {
+  /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
+ }
 #
 #source /usr/share/nvm/init-nvm.sh
 
@@ -127,3 +132,11 @@ PATH=$PATH:~/.cargo/bin/
 # fi
 
 
+
+# pnpm
+export PNPM_HOME="/home/rasib/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
