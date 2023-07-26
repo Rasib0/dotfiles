@@ -77,7 +77,8 @@ plugins=(
         zsh-syntax-highlighting
         zsh-autosuggestions
         zsh-completions
-     #   git
+        vi-mode
+        git
         )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,6 +112,8 @@ source $ZSH/oh-my-zsh.sh
  alias tmuxconfig="$EDITOR ~/.tmux.conf"
  alias swayconfig="$EDITOR ~/.config/sway/"
  alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
+ 
+ alias notes="cd ~/Projects/Vault/ && $EDITOR"
 
  function touchp() {
   /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
