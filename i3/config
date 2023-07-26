@@ -201,6 +201,7 @@ exec --no-startup-id picom --restore
 # natural scrolling
 exec --no-startup-id xinput set-prop 11 312 1 
 
+# swap with caps and esc
 exec --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
 # clipboard tool
 exec greenclip daemon
