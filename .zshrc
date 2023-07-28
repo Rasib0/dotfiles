@@ -113,7 +113,7 @@ source $ZSH/oh-my-zsh.sh
  alias swayconfig="$EDITOR ~/.config/sway/"
  alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
  alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
- 
+ alias ls="exa"
  alias cls="clear"
 
  alias notes="cd ~/Projects/Vault/ && $EDITOR"
@@ -138,8 +138,6 @@ PATH=$PATH:~/.cargo/bin/
 #   tmux attach -t default || tmux new -s default
 # fi
 
-
-
 # pnpm
 export PNPM_HOME="/home/rasib/.local/share/pnpm"
 case ":$PATH:" in
@@ -147,7 +145,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-#
-#
+
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
