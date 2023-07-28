@@ -112,8 +112,12 @@ source $ZSH/oh-my-zsh.sh
  alias tmuxconfig="$EDITOR ~/.tmux.conf"
  alias swayconfig="$EDITOR ~/.config/sway/"
  alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
+ alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
  
+ alias cls="clear"
+
  alias notes="cd ~/Projects/Vault/ && $EDITOR"
+ alias habits="dijo"
 
  function touchp() {
   /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
@@ -143,3 +147,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+#
+#
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"

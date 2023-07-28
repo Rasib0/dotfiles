@@ -196,7 +196,7 @@ bar {
 
 exec --no-startup-id nitrogen --restore
 # start picom
-exec --no-startup-id picom --restore
+exec --no-startup-id picom --restor e
 
 # natural scrolling
 exec --no-startup-id xinput set-prop 11 312 1 
