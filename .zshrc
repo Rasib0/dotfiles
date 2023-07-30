@@ -77,7 +77,7 @@ plugins=(
         zsh-syntax-highlighting
         zsh-autosuggestions
         zsh-completions
-        vi-mode
+      #  vi-mode
         git
         )
 
@@ -146,5 +146,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+# Turso
+export PATH="/home/rasib/.turso:$PATH"

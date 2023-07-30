@@ -202,7 +202,7 @@ exec --no-startup-id picom --restor e
 exec --no-startup-id xinput set-prop 11 312 1 
 
 # swap with caps and esc
-exec --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
+exec_always --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
 # clipboard tool
 exec greenclip daemon
 bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard run-command '{cmd}'
