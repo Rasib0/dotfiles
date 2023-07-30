@@ -5,3 +5,9 @@
 --
 -- vim.keymap.set("i", "kj", "<Esc>")
 -- vim.keymap.set("i", "jk", "<Esc>")
+
+vim.keymap.set(
+  "n",
+  "<leader><space>",
+  "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--ignore', '--hidden', '--files', '--glob', '!.git'}, prompt_prefix= '🔍' })<cr>"
+)
