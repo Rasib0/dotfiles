@@ -115,6 +115,7 @@ source $ZSH/oh-my-zsh.sh
  alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
  alias ls="exa"
  alias cls="clear"
+ alias vim="nvim"
 
  alias notes="cd ~/Projects/Vault/ && $EDITOR"
  alias habits="dijo"
