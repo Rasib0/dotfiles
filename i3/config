@@ -193,7 +193,7 @@ bar {
 }
 
 # ---- MY CONFIGS ----
-
+exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
 # start picom
 exec --no-startup-id picom --restor e

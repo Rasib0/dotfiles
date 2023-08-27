@@ -116,8 +116,9 @@ source $ZSH/oh-my-zsh.sh
  alias ls="exa"
  alias cls="clear"
  alias vim="nvim"
+ alias cppcompile='function _cppcompile() { clang++ "$1" -o "${1%.cpp}.out"; }; _cppcompile'
 
- alias notes="cd ~/Projects/Vault/ && $EDITOR"
+ alias notes="cd ~/Projects/archive/Vault/ && $EDITOR"
  alias habits="dijo"
 
  function touchp() {

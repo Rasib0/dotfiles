@@ -1,7 +1,5 @@
 return {
   -- {
-
-   -- useless!
   --   "neovim/nvim-lspconfig",
   --   dependencies = {
   --     "simrat39/rust-tools.nvim",
@@ -26,4 +24,4 @@ return {
   --       },
   --     },
   --   },
-  }
+}
