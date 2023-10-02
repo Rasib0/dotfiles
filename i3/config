@@ -196,10 +196,9 @@ bar {
 exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
 # start picom
-exec --no-startup-id picom --restor e
+exec --no-startup-id picom --restore
 
-# natural scrolling
-exec --no-startup-id xinput set-prop 11 312 1 
+exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
 # swap with caps and esc
 exec_always --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
