@@ -120,6 +120,7 @@ source $ZSH/oh-my-zsh.sh
 
  alias notes="cd ~/Projects/archive/Vault/ && $EDITOR"
  alias habits="dijo"
+ alias reader="zathura"
 
  function touchp() {
   /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
