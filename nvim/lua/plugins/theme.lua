@@ -24,7 +24,8 @@ return {
     opts = {
       -- colorscheme = "github_dark_dimmed",
       colorscheme = "vscode",
-      --colorscheme = "tokyonight"
+      -- colorscheme = "tokyonight",
+      --colorscheme = "habamax",
     },
   },
 }

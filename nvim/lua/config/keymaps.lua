@@ -6,8 +6,9 @@
 -- vim.keymap.set("i", "kj", "<Esc>")
 -- vim.keymap.set("i", "jk", "<Esc>")
 
-vim.keymap.set(
-  "n",
-  "<leader><space>",
-  "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--ignore', '--hidden', '--files', '--glob', '!.git', '--glob', '!Excalidraw'}, prompt_prefix= '🔍' })<cr>"
-)
+-- I just changed .local/share/nvim/lazy/LazyVim/utils/init.lua to treesitter builtin = "find_files"
+-- vim.keymap.set(
+--   "n",
+--   "<leader><space>",
+--   "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--ignore', '--hidden', '--files', '--glob', '!.git', '--glob', '!Excalidraw', '--glob', '!.obsidian'}, prompt_prefix= '🔍' })<cr>"
+-- )
