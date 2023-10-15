@@ -18,12 +18,12 @@ alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias swayconfig="$EDITOR ~/.config/sway/"
 
-function cpprun
+function clangr
     function _cppcompile
         set filename $argv[1]
         set output_file (string replace -r '\.cpp$' '.out' $filename)
-        clang++ $filename -o $output_file
-        ./$output_file <input.txt
+        clang++ $filename -o a.out
+        ./a.out <input.txt
     end
     _cppcompile $argv[1]
 end

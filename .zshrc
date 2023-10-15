@@ -124,6 +124,16 @@ source $ZSH/oh-my-zsh.sh
   function touchp() {
   /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
  }
+
+
+function clangr() {
+    _cppcompile() {
+        filename="$1"
+        clang++ "$filename" -o a.out
+        "./a.out" < input.txt
+    }
+    _cppcompile "$1"
+}
 #
 #source /usr/share/nvm/init-nvm.sh
 
