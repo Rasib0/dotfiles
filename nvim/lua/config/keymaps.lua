@@ -9,5 +9,5 @@
 vim.keymap.set(
   "n",
   "<leader><space>",
-  "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--ignore', '--hidden', '--files', '--glob', '!.git', '--glob', '!Excalidraw'}, prompt_prefix= '🔍' })<cr>"
+  "<cmd>lua require('telescope.builtin').find_files({ find_command = {'rg', '--ignore', '--hidden', '--files', '--glob', '!.git', '--glob', '!_build', '--glob', '!Excalidraw'}, prompt_prefix= '🔍' })<cr>"
 )
