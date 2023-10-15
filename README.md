@@ -3,7 +3,7 @@
 - i3 in .config
 - sway in .config (i3 > sway)
 - nvim in .config
-- picom.conf in .config 
+- picom.conf in .config
 - .zshrc in $HOME
 - .tmux.conf $HOME
 
