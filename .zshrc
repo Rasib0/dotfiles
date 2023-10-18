@@ -105,20 +105,20 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
- alias zshconfig="$EDITOR ~/.zshrc"
- alias i3config="$EDITOR ~/.config/i3/config"
- alias nvimconfig="$EDITOR ~/.config/nvim/"
- alias tmuxconfig="$EDITOR ~/.tmux.conf"
- alias swayconfig="$EDITOR ~/.config/sway/"
- alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
- alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
- alias ls="exa"
- alias cls="clear"
-
- alias notes="cd ~/Projects/Vault/ && $EDITOR"
- alias habits="dijo"
- alias reader="zathura"
- alias fdupes="rmlint"
+alias zshconfig="$EDITOR ~/.zshrc"
+alias i3config="$EDITOR ~/.config/i3/config"
+alias nvimconfig="$EDITOR ~/.config/nvim/"
+alias tmuxconfig="$EDITOR ~/.tmux.conf"
+alias swayconfig="$EDITOR ~/.config/sway/"
+alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
+alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
+alias ls="exa"
+alias cls="clear"
+alias py="python"
+alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
+alias habits="dijo"
+alias reader="zathura"
+alias fdupes="rmlint"
 
 function clangr() {
     _cppcompile() {
@@ -140,9 +140,9 @@ alias vivaldi="vivaldi-stable"
 
 PATH=$PATH:~/.cargo/bin/
 
- if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-   tmux attach -t default || tmux new -s default
- fi
+# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#  tmux attach -t default || tmux new -s default
+# fi
 
 # pnpm
 export PNPM_HOME="/home/rasib/.local/share/pnpm"
