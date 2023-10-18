@@ -17,6 +17,7 @@ alias fishconfig="$EDITOR ~/.config/fish/"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias swayconfig="$EDITOR ~/.config/sway/"
+alias reader="zathura"
 
 function clangr
     function _cppcompile
