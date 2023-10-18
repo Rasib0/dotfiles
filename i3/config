@@ -234,8 +234,8 @@ bindsym $mod+Shift+y exec vivaldi-stable https://youtube.com/feed/subscriptions
 bindsym $mod+u exec jumpapp vivaldi-stable
 bindsym $mod+Shift+u exec vivaldi-stable https://github.com
 
-bindsym $mod+o exec vivaldi-stable https://outlook.office.com/mail/inbox
-bindsym $mod+Shift+o exec vivaldi-stable https://gmail.com
+bindsym $mod+m exec vivaldi-stable https://outlook.office.com/mail/inbox
+bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
 
 bindsym $mod+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
 bindsym $mod+Shift+t exec jumpapp xfce4-terminal
@@ -247,8 +247,9 @@ bindsym $mod+Shift+p exec vivaldi-stable https://phind.com
 bindsym $mod+n exec jumpapp thunar
 bindsym $mod+Shift+n exec
 
-bindsym $mod+m exec jumpapp anki
-bindsym $mod+Shift+m exec jumpapp obsidian
+bindsym $mod+o exec jumpapp obsidian
+bindsym $mod+Shift+o exec jumpapp anki
+
 
 bindsym $mod+z focus child
 
