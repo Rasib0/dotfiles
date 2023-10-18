@@ -114,17 +114,11 @@ source $ZSH/oh-my-zsh.sh
  alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
  alias ls="exa"
  alias cls="clear"
- alias cppcompile='function _cppcompile() { clang++ "$1" -o "${1%.cpp}.out"; }; _cppcompile'
 
  alias notes="cd ~/Projects/Vault/ && $EDITOR"
  alias habits="dijo"
  alias reader="zathura"
  alias fdupes="rmlint"
- 
-  function touchp() {
-  /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
- }
-
 
 function clangr() {
     _cppcompile() {

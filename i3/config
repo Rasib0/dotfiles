@@ -227,26 +227,29 @@ bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 bindsym $mod+g exec rofi -modi emoji -show emoji                                
 
 # Application shortcuts
-bindsym $mod+y exec vivaldi-stable 
-bindsym $mod+Shift+y exec vivaldi-stable https://youtube.com
+#
+bindsym $mod+y exec vivaldi-stable https://youtube.com
+bindsym $mod+Shift+y exec vivaldi-stable https://youtube.com/feed/subscriptions
 
-bindsym $mod+u exec vivaldi-stable https:github.com
-bindsym $mod+Shift+u exec vivaldi-stable http:://localhost:3000
+bindsym $mod+u exec jumpapp vivaldi-stable
+bindsym $mod+Shift+u exec vivaldi-stable https://github.com
+
 bindsym $mod+o exec vivaldi-stable https://outlook.office.com/mail/inbox
 bindsym $mod+Shift+o exec vivaldi-stable https://gmail.com
 
 bindsym $mod+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
-bindsym $mod+Shift+t exec vivaldi-stable https://www.notion.so
+bindsym $mod+Shift+t exec jumpapp xfce4-terminal
     
-bindsym $mod+x exec vivaldi-stable https://chat.openai.com
-bindsym $mod+Shift+x exec vivaldi-stable https://phind.com
+bindsym $mod+p exec vivaldi-stable https://chat.openai.com
+bindsym $mod+Shift+p exec vivaldi-stable https://phind.com
 
-#utlity row 
-bindsym $mod+n exec thunar
-bindsym $mod+Shift+n exec code
+#utlity row
+bindsym $mod+n exec jumpapp thunar
+bindsym $mod+Shift+n exec
 
-bindsym $mod+m exec anki
-bindsym $mod+Shift+m exec obsidian
+bindsym $mod+m exec jumpapp anki
+bindsym $mod+Shift+m exec jumpapp obsidian
+
 bindsym $mod+z focus child
 
 # class                 border  bground text    indicator child_border
