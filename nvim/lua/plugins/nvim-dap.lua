@@ -5,7 +5,6 @@ return {
     "mfussenegger/nvim-dap",
   },
   opts = {
-    automatic_installation = true,
     handlers = {},
   },
 }
