@@ -1,4 +1,3 @@
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -106,25 +105,29 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
- alias zshconfig="$EDITOR ~/.zshrc"
- alias i3config="$EDITOR ~/.config/i3/config"
- alias nvimconfig="$EDITOR ~/.config/nvim/"
- alias tmuxconfig="$EDITOR ~/.tmux.conf"
- alias swayconfig="$EDITOR ~/.config/sway/"
- alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
- alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
- alias ls="exa"
- alias cls="clear"
- alias vim="nvim"
- alias cppcompile='function _cppcompile() { clang++ "$1" -o "${1%.cpp}.out"; }; _cppcompile'
+alias zshconfig="$EDITOR ~/.zshrc"
+alias i3config="$EDITOR ~/.config/i3/config"
+alias nvimconfig="$EDITOR ~/.config/nvim/"
+alias tmuxconfig="$EDITOR ~/.tmux.conf"
+alias swayconfig="$EDITOR ~/.config/sway/"
+alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
+alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
+alias ls="exa"
+alias cls="clear"
+alias py="python"
+alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
+alias habits="dijo"
+alias reader="zathura"
+alias fdupes="rmlint"
 
- alias notes="cd ~/Projects/Vault/ && $EDITOR"
- alias habits="dijo"
- alias reader="zathura"
-
- function touchp() {
-  /bin/mkdir -p "$(dirname "$1")/" && /usr/bin/touch "$1"
- }
+function clangr() {
+    _cppcompile() {
+        filename="$1"
+        clang++ "$filename" -o a.out
+        "./a.out" < input.txt
+    }
+    _cppcompile "$1"
+}
 #
 #source /usr/share/nvm/init-nvm.sh
 
@@ -138,7 +141,7 @@ alias vivaldi="vivaldi-stable"
 PATH=$PATH:~/.cargo/bin/
 
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-#   tmux attach -t default || tmux new -s default
+#  tmux attach -t default || tmux new -s default
 # fi
 
 # pnpm
@@ -154,3 +157,6 @@ eval "$(zoxide init zsh)"
 
 # Turso
 export PATH="/home/rasib/.turso:$PATH"
+
+# opam configuration
+[[ ! -r /home/rasib/.opam/opam-init/init.zsh ]] || source /home/rasib/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
