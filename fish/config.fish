@@ -2,8 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-alias booksm='cd storage/downloads/Books/'
-alias notesm='cd storage/downloads/Vault/'
+alias booksm='cd ~/storage/downloads/Books/'
+alias notesm='cd ~/storage/downloads/Vault/'
 
 alias books="cd ~/Projects/Books/"
 alias notes="cd ~/Projects/Vault/ && $EDITOR"

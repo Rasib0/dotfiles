@@ -76,6 +76,7 @@ plugins=(
         zsh-syntax-highlighting
         zsh-autosuggestions
         zsh-completions
+        zsh-vi-mode
       #  vi-mode
         git
         )
@@ -112,7 +113,6 @@ alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias swayconfig="$EDITOR ~/.config/sway/"
 alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
 alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
-alias ls="exa"
 alias cls="clear"
 alias py="python"
 alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
