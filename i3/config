@@ -245,7 +245,7 @@ bindsym $mod+Shift+p exec vivaldi-stable https://phind.com
 
 #utlity row
 bindsym $mod+n exec jumpapp thunar
-bindsym $mod+Shift+n exec
+bindsym $mod+Shift+n exec jumpapp vivaldi-stable https://drive.google.com/drive/u/0/my-drive
 
 bindsym $mod+o exec jumpapp obsidian
 bindsym $mod+Shift+o exec jumpapp anki
