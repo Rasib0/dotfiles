@@ -77,7 +77,6 @@ plugins=(
         zsh-autosuggestions
         zsh-completions
         zsh-vi-mode
-      #  vi-mode
         git
         )
 
@@ -111,6 +110,7 @@ alias i3config="$EDITOR ~/.config/i3/config"
 alias nvimconfig="$EDITOR ~/.config/nvim/"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias swayconfig="$EDITOR ~/.config/sway/"
+alias weztermconfig="$EDITOR ~/.wezterm.lua"
 alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
 alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
 alias cls="clear"
