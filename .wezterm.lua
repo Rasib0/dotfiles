@@ -16,6 +16,7 @@ end
 config.color_scheme = "Batman"
 config.enable_tab_bar = false
 config.window_background_opacity = 0.8
+
 --config.window_padding = {
 --	left = 0,
 --	right = 0,
