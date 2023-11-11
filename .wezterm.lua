@@ -15,13 +15,13 @@ end
 -- For example, changing the color scheme:
 config.color_scheme = "Batman"
 config.enable_tab_bar = false
-config.window_background_opacity = 0.8
---config.window_padding = {
---	left = 0,
---	right = 0,
---	top = 0,
---	bottom = 0,
---}
+config.window_background_opacity = 0.9
+config.window_padding = {
+	left = 2,
+	right = 2,
+	top = 2,
+	bottom = 2,
+}
 
 -- and finally, return the configuration to wezterm
 return config
