@@ -119,6 +119,7 @@ alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
 alias habits="dijo"
 alias reader="zathura"
 alias fdupes="rmlint"
+alias ls="exa"
 
 function clangr() {
     _cppcompile() {
