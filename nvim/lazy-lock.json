@@ -191,7 +191,6 @@
     "branch": "master",
     "commit": "41219492b2b700ae4963f648ef1b19241a2d61c9"
   },
-=======
   "nvim-lspconfig": {
     "branch": "master",
     "commit": "b44737605807023d32e6310b87ba69f4dbf10e0e"
@@ -204,7 +203,6 @@
     "branch": "master",
     "commit": "5c3474fbe1028844cfe5a9c238366da04c2e7551"
   },
->>>>>>> e10c74e6d69d29326e3df10bb735cba20cf439a2
   "nvim-treesitter": {
     "branch": "master",
     "commit": "96f55f304332ca6ea1b7dde32d3ec04b5298c316"
