@@ -1,0 +1,1 @@
+xinput map-to-output "HUION Huion Tablet_H950P Pen Pen (0)" DP-2
