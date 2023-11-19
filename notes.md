@@ -10,6 +10,7 @@ ln -s /home/rasib/Projects/dotfiles/.tmux.conf ~/.tmux.conf
 ln -s /home/rasib/Projects/dotfiles/.profile ~/.profile
 
 ln -s /home/rasib/Projects/dotfiles/i3status-rust ~/.config/i3status-rust
+ln -s /home/rasib/Projects/dotfiles/nvim ~/.config/nvim
 ln -s /home/rasib/Projects/dotfiles/fish ~/.config/fish
 ln -s /home/rasib/Projects/dotfiles/i3 ~/.config/i3
 ```
