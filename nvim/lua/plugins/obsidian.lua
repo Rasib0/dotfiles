@@ -1,16 +1,16 @@
 return {
   {
     "epwalsh/obsidian.nvim",
-    lazy = true,
-    event = { -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
-      -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
-      --  "BufReadPre /home/Projects/Vault/**.md",
-      -- "BufNewFile /home/Projects/Vault/**.md",
-      "BufReadPre "
-        .. vim.fn.expand("~")
-        .. "/Projects/Vault/**.md",
-      "BufNewFile " .. vim.fn.expand("~") .. "/Projects/Vault/**.md",
-    },
+    lazy = false,
+    -- event = { -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+    --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
+    --   --  "BufReadPre /home/Projects/Vault/**.md",
+    --   -- "BufNewFile /home/Projects/Vault/**.md",
+    --   "BufReadPre "
+    --     .. vim.fn.expand("~")
+    --     .. "/Projects/Vault/**.md",
+    --   "BufNewFile " .. vim.fn.expand("~") .. "/Projects/Vault/**.md",
+    -- },
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       dir = "~/Projects/Vault", -- no need to call 'vim.fn.expand' here
