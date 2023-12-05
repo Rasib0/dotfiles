@@ -2,7 +2,7 @@ xrandr --output DP-1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --o
 
 export TERMINAL="wezterm"
 export EDITOR="nvim"
-export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/intellij-idea-ultimate-edition/plugins/Kotlin/kotlinc/bin:$PATH"
 export PATH="/opt/intellij-idea-ultimate-edition/plugins/maven/lib/maven3/bin:$PATH"
+. "$HOME/.cargo/env"
