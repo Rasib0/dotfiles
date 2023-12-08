@@ -119,6 +119,7 @@ alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
 alias habits="dijo"
 alias reader="zathura"
 alias fdupes="rmlint"
+alias lg="lazygit"
 alias ls="exa"
 
 function clangr() {
@@ -146,18 +147,15 @@ PATH=$PATH:~/.cargo/bin/
 # fi
 
 # pnpm
-export PNPM_HOME="/home/rasib/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# export PNPM_HOME="/home/rasib/.local/share/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
 # pnpm end
 
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 # Turso
-export PATH="/home/rasib/.turso:$PATH"
-
-# opam configuration
-[[ ! -r /home/rasib/.opam/opam-init/init.zsh ]] || source /home/rasib/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+# export PATH="/home/rasib/.turso:$PATH"
