@@ -13,6 +13,7 @@ ln -s /home/rasib/Projects/dotfiles/i3status-rust ~/.config/i3status-rust
 ln -s /home/rasib/Projects/dotfiles/nvim ~/.config/nvim
 ln -s /home/rasib/Projects/dotfiles/fish ~/.config/fish
 ln -s /home/rasib/Projects/dotfiles/i3 ~/.config/i3
+ln -s /home/raisib/Projects/dofiles/vifm ~/.config/vifm
 ```
 
 ## Installing TPM for tmux
