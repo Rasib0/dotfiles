@@ -77,7 +77,6 @@ plugins=(
         zsh-autosuggestions
         zsh-completions
         zsh-vi-mode
-      #  vi-mode
         git
         )
 
@@ -111,14 +110,19 @@ alias i3config="$EDITOR ~/.config/i3/config"
 alias nvimconfig="$EDITOR ~/.config/nvim/"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
 alias swayconfig="$EDITOR ~/.config/sway/"
+alias weztermconfig="$EDITOR ~/.wezterm.lua"
 alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
+alias vifmconfig="$EDITOR ~/.config/vifm/vifmrc"
 alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
+alias dotfiles="cd ~/Projects/dotfiles"
 alias cls="clear"
 alias py="python"
 alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
 alias habits="dijo"
 alias reader="zathura"
 alias fdupes="rmlint"
+alias lg="lazygit"
+alias ls="exa"
 
 function clangr() {
     _cppcompile() {
@@ -145,18 +149,15 @@ PATH=$PATH:~/.cargo/bin/
 # fi
 
 # pnpm
-export PNPM_HOME="/home/rasib/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# export PNPM_HOME="/home/rasib/.local/share/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
 # pnpm end
 
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 # Turso
-export PATH="/home/rasib/.turso:$PATH"
-
-# opam configuration
-[[ ! -r /home/rasib/.opam/opam-init/init.zsh ]] || source /home/rasib/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+# export PATH="/home/rasib/.turso:$PATH"

@@ -49,7 +49,7 @@ floating_modifier $mod
 # tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec $TERMINAL
 
 # kill focused window
 # bindsym $mod+Shift+q kill
@@ -238,14 +238,14 @@ bindsym $mod+m exec vivaldi-stable https://outlook.office.com/mail/inbox
 bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
 
 bindsym $mod+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
-bindsym $mod+Shift+t exec jumpapp xfce4-terminal
+bindsym $mod+Shift+t exec jumpapp $TERMINAL
     
 bindsym $mod+p exec vivaldi-stable https://chat.openai.com
 bindsym $mod+Shift+p exec vivaldi-stable https://phind.com
 
 #utlity row
-bindsym $mod+n exec jumpapp thunar
-bindsym $mod+Shift+n exec
+bindsym $mod+n exec vifm 
+bindsym $mod+Shift+n exec jumpapp vivaldi-stable https://drive.google.com/drive/u/0/my-drive
 
 bindsym $mod+o exec jumpapp obsidian
 bindsym $mod+Shift+o exec jumpapp anki
