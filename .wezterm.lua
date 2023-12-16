@@ -13,7 +13,8 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "Batman"
+config.color_scheme = "Afterglow"
+config.font_size = 14.0
 config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
 config.window_background_opacity = 1.00
