@@ -10,6 +10,19 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- import any extras modules here
+    -- { import = "lazyvim.plugins.extras.lang.typescript" },
+    -- { import = "lazyvim.plugins.extras.lang.json" },
+    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.util.project" },
+  --  { import = "lazyvim.plugins.extras.lang.python"},
+
+    -- import/override with your plugins
     { import = "plugins" },
   },
   defaults = {
@@ -22,7 +35,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
-  checker = { enabled = false }, -- automatically check for plugin updates
+  checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
       -- disable some rtp plugins
@@ -39,8 +52,3 @@ require("lazy").setup({
     },
   },
 })
-
--- This settings lets clangd to work with utf-16 files
--- local capabilities = vim.lsp.protocol.make_client_capabilities()
--- capabilities.offsetEncoding = { "utf-16" }
--- require("lspconfig").clangd.setup({ capabilities = capabilities })
