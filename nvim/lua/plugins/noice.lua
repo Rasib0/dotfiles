@@ -4,7 +4,7 @@ return {
     table.insert(opts.routes, {
       filter = {
         event = "notify",
-        find = "no information available",
+        find = "No information available",
       },
       opts = { skip = true },
     })
