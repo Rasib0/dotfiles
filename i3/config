@@ -154,6 +154,13 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 set $monitor_left "DP-2"
 set $monitor_right "DP-1"
 
+# Assign workspaces to applications
+assign [class="firefox" instance="Navigator"] → $ws3
+assign [class="Vivaldi-stable" instance="vivaldi-stable"] → $ws3
+assign [class="obsidian" instance="obsidian"] → $ws4
+assign [class="Anki" instance="anki"] → $ws4
+# assign [class="org.wezfurlong.wezterm" instance="org.wezfurlong.wezterm"] → $ws1
+
 # Assign workspaces to monitor
 workspace $ws1 output $monitor_left
 workspace $ws2 output $monitor_left
@@ -210,6 +217,7 @@ bar {
 # ---- MY CONFIGS ----
 exec --no-startup-id dunst
 exec --no-startup-id nitrogen --restore
+
 # start picom
 exec --no-startup-id picom --restore
 
@@ -232,7 +240,7 @@ bindsym $mod+y exec vivaldi-stable https://youtube.com
 bindsym $mod+Shift+y exec vivaldi-stable https://youtube.com/feed/subscriptions
 
 bindsym $mod+u exec jumpapp vivaldi-stable
-bindsym $mod+Shift+u exec vivaldi-stable https://github.com
+bindsym $mod+Shift+u exec jumpapp firefox-developer-edition
 
 bindsym $mod+m exec vivaldi-stable https://outlook.office.com/mail/inbox
 bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
@@ -240,13 +248,11 @@ bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
 bindsym $mod+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
 bindsym $mod+Shift+t exec jumpapp $TERMINAL
     
-bindsym $mod+p exec vivaldi-stable https://chat.openai.com
-bindsym $mod+Shift+p exec vivaldi-stable https://phind.com
+bindsym $mod+p workspace next
+bindsym $mod+n workspace prev 
 
-#utlity row
-bindsym $mod+n exec vifm 
-bindsym $mod+Shift+n exec jumpapp vivaldi-stable https://drive.google.com/drive/u/0/my-drive
-
+bindsym $mod+i exec $TERMINAL -e vifm 
+bindsym $mod+Shift+i exec "$TERMINAL -e sh -c 'cd ~/Projects/ && nvim'"
 bindsym $mod+o exec jumpapp obsidian
 bindsym $mod+Shift+o exec jumpapp anki
 
