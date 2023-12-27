@@ -248,8 +248,8 @@ bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
 bindsym $mod+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
 bindsym $mod+Shift+t exec jumpapp $TERMINAL
     
-bindsym $mod+p workspace next
-bindsym $mod+n workspace prev 
+bindsym $mod+n workspace next
+bindsym $mod+p workspace prev 
 
 bindsym $mod+i exec $TERMINAL -e vifm 
 bindsym $mod+Shift+i exec "$TERMINAL -e sh -c 'cd ~/Projects/ && nvim'"
