@@ -162,3 +162,10 @@ eval "$(zoxide init zsh)"
 
 # Turso
 # export PATH="/home/rasib/.turso:$PATH"
+
+# bun completions
+[ -s "/home/rasib/.bun/_bun" ] && source "/home/rasib/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

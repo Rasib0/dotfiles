@@ -22,8 +22,9 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      --      -- colorscheme = "habamax",
-      colorscheme = "github_dark_dimmed",
+      -- colorscheme = "habamax",
+      -- colorscheme = "github_dark_dimmed",
+      colorscheme = "catppuccin",
       --      -- colorscheme = "vscode"
       --      colorscheme = "tokyonight",
     },
