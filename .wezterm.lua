@@ -13,7 +13,7 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
-config.color_scheme = "Afterglow"
+config.color_scheme = "Catppuccin Mocha"
 config.font_size = 14.0
 config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
@@ -22,7 +22,7 @@ config.window_padding = {
 	left = 2,
 	right = 2,
 	top = 2,
-	bottom = 2,
+	bottom = 0,
 }
 
 -- and finally, return the configuration to wezterm

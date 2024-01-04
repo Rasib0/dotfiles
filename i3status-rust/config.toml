@@ -1,16 +1,13 @@
 icons_format = "{icon}"
 
 [theme]
-theme = "solarized-dark"
-[theme.overrides]
-idle_bg = "#123456"
-idle_fg = "#abcdef"
+theme = "ctp-mocha"
 
 [icons]
-icons = "awesome4"
+icons = "emoji"
 [icons.overrides]
-bat = ["|E|", "|_|", "|=|", "|F|"]
-bat_charging = "|^| "
+bat = ["|?|", "|¼|", "|½|", "|¾|", "|X|"]
+bat_charging = "|+| "
 
 [[block]]
 block = "cpu"
@@ -46,5 +43,3 @@ block = "battery"
 format = " $percentage {$time |}"
 device = "DisplayDevice"
 driver = "upower"
-
-
