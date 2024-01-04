@@ -125,6 +125,10 @@ alias fdupes="rmlint"
 alias lg="lazygit"
 alias ls="exa"
 
+alias cr="cargo run"
+alias ct="cargo test"
+alias ck="cargo check"
+
 function clangr() {
     _cppcompile() {
         filename="$1"
@@ -149,16 +153,14 @@ PATH=$PATH:~/.cargo/bin/
 #  tmux attach -t default || tmux new -s default
 # fi
 
-# pnpm
-# export PNPM_HOME="/home/rasib/.local/share/pnpm"
-# case ":$PATH:" in
-#   *":$PNPM_HOME:"*) ;;
-#   *) export PATH="$PNPM_HOME:$PATH" ;;
-# esac
-# pnpm end
-
 # eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-# Turso
-# export PATH="/home/rasib/.turso:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/rasib/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
