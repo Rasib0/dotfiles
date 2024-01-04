@@ -225,7 +225,8 @@ exec_always --no-startup-id picom --restore
 exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
 # swap with caps and esc
-exec_always --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
+exec --no-startup-id setxkbmap -option caps:swapescape
+# exec_always --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
 # clipboard tool
 exec greenclip daemon
 
@@ -238,7 +239,6 @@ bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 # Application shortcuts
 #
 
-bindsym $mod+Shift+y exec vivaldi-stable https://youtube.com/feed/subscriptions
 
 bindsym $mod+u exec jumpapp vivaldi-stable
 bindsym $mod+Shift+u exec jumpapp firefox-developer-edition
@@ -246,14 +246,15 @@ bindsym $mod+Shift+u exec jumpapp firefox-developer-edition
 bindsym $mod+m exec vivaldi-stable https://outlook.office.com/mail/inbox
 bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
 
-bindsym $mod+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
-bindsym $mod+Shift+t exec jumpapp $TERMINAL
+bindsym $mod+t exec jumpapp $TERMINAL
+bindsym $mod+Shift+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
     
 bindsym $mod+n workspace next
 bindsym $mod+p workspace prev
 
 bindsym $mod+i exec $TERMINAL -e vifm
 bindsym $mod+Shift+i exec "$TERMINAL -e sh -c 'cd ~/Projects/ && nvim'"
+
 bindsym $mod+o exec jumpapp obsidian
 bindsym $mod+Shift+o exec jumpapp anki
 

@@ -7,6 +7,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/intellij-idea-ultimate-edition/plugins/Kotlin/kotlinc/bin:$PATH"
 export PATH="/opt/intellij-idea-ultimate-edition/plugins/maven/lib/maven3/bin:$PATH"
 
+# setxkbmap -option caps:swapescape
+
 source /home/rasib/Projects/dotfiles/secrets.sh
 # for rofi search
 export ROFI_SEARCH='cse'
