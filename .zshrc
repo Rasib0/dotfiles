@@ -105,11 +105,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+alias roficonfig="cd ~/.config/rofi/ && $EDITOR"
+alias nvimconfig="cd ~/.config/nvim/ && $EDITOR"
+alias swayconfig="cd ~/.config/sway/ && $EDITOR"
+
 alias zshconfig="$EDITOR ~/.zshrc"
 alias i3config="$EDITOR ~/.config/i3/config"
-alias nvimconfig="$EDITOR ~/.config/nvim/"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
-alias swayconfig="$EDITOR ~/.config/sway/"
 alias weztermconfig="$EDITOR ~/.wezterm.lua"
 alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
 alias vifmconfig="$EDITOR ~/.config/vifm/vifmrc"

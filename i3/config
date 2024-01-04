@@ -61,7 +61,7 @@ bindsym $mod+q kill
 # A more modern dmenu replacement is rofi:
  bindcode $mod+40 exec "rofi -modi drun,run -show drun -show-icons"
  bindsym $mod+Shift+d exec "rofi -combi-modi window,drun -show combi -show-icons"
-
+bindsym $mod+y exec --no-startup-id "rofi -modi blocks -blocks-wrap rofi-search -show blocks -lines 2 -eh 2"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -234,7 +234,7 @@ bindsym $mod+g exec rofi -modi emoji -show emoji
 
 # Application shortcuts
 #
-bindsym $mod+y exec vivaldi-stable https://youtube.com
+
 bindsym $mod+Shift+y exec vivaldi-stable https://youtube.com/feed/subscriptions
 
 bindsym $mod+u exec jumpapp vivaldi-stable

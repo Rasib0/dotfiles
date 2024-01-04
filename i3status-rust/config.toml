@@ -3,8 +3,6 @@ icons_format = "{icon}"
 [theme]
 theme = "ctp-mocha"
 
-[icons]
-icons = "emoji"
 [icons.overrides]
 bat = ["|?|", "|¼|", "|½|", "|¾|", "|X|"]
 bat_charging = "|+| "
