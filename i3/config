@@ -62,6 +62,7 @@ bindsym $mod+q kill
 # A more modern dmenu replacement is rofi:
 bindcode $mod+40 exec "rofi -modi drun,run -show drun -show-icons"
 bindsym $mod+Shift+d exec "rofi -combi-modi window,drun -show combi -show-icons"
+
 # using rofi-search to search
 bindsym $mod+y exec --no-startup-id "rofi -modi blocks -blocks-wrap rofi-search -show blocks -lines 1 -eh 3 -kb-custom-1"
 # There also is i3-dmenu-desktop which only displays applications shipping a
