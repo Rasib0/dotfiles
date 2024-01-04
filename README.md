@@ -12,6 +12,7 @@
 | .tmux.conf | `~` (Home directory) | Tmux configuration |
 | .profile | `~` (Home directory) | Used to set environment variables (e.g., PATH) |
 | .vifmrc | `~` (Home directory) | Vifm configuration |
+| rofi | ~/.config/ | dmenu repalcement |
 
 ## Cheatsheets Links
 
