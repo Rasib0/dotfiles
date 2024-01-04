@@ -7,3 +7,4 @@ nvim/foo.*
 nvim/*.log
 nvim/data
 nvim/lazy-locky.json
+secrets.sh

@@ -10,6 +10,8 @@ configuration{
     display-Network: " 󰤨  Network";
     sidebar-mode: true;
 
+    kb-accept-custom: "Control+y";
+
     /* vim keybinds */
     kb-row-up: "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
     kb-row-down: "Down,Control+j";
