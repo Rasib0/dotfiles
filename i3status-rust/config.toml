@@ -11,7 +11,7 @@ icons = "material-nf"
 # i3srs config
 [[block]]
 block = "music"
-format = " $icon {$combo.str(max_w:30,rot_interval:0.5) $prev $play $next |}"
+format = " $icon {$combo.str(max_w:100,rot_interval:0.5) $prev $play $next |}"
 
 [[block]]
 block = "pomodoro"
