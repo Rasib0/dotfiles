@@ -14,7 +14,7 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Mocha"
-config.font_size = 14.0
+config.font_size = 13.0
 config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
 config.window_background_opacity = 1.00

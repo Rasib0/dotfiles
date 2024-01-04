@@ -150,18 +150,12 @@ function clangr() {
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#fish I am using zsh instead
-alias vivaldi="vivaldi-stable"
-
-PATH=$PATH:~/.cargo/bin/
-
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 #  tmux attach -t default || tmux new -s default
 # fi
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-
 
 # pnpm
 export PNPM_HOME="/home/rasib/.local/share/pnpm"
