@@ -112,11 +112,15 @@ alias swayconfig="cd ~/.config/sway/ && $EDITOR"
 alias zshconfig="$EDITOR ~/.zshrc"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
+alias picomconfig="$EDITOR ~/.config/picom.conf"
+alias i3rustconfig="$EDITOR ~/.config/i3status-rust/config.toml"
 alias weztermconfig="$EDITOR ~/.wezterm.lua"
 alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
 alias vifmconfig="$EDITOR ~/.config/vifm/vifmrc"
 alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
+
 alias dotfiles="cd ~/Projects/dotfiles"
+
 alias cls="clear"
 alias vim="nvim"
 alias py="python"
@@ -126,6 +130,10 @@ alias reader="zathura"
 alias fdupes="rmlint"
 alias lg="lazygit"
 alias ls="exa"
+
+alias cr="cargo run"
+alias ct="cargo test"
+alias ck="cargo check"
 
 function clangr() {
     _cppcompile() {
@@ -142,28 +150,20 @@ function clangr() {
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#fish I am using zsh instead
-alias vivaldi="vivaldi-stable"
-
-PATH=$PATH:~/.cargo/bin/
-
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 #  tmux attach -t default || tmux new -s default
 # fi
 
-# pnpm
-# export PNPM_HOME="/home/rasib/.local/share/pnpm"
-# case ":$PATH:" in
-#   *":$PNPM_HOME:"*) ;;
-#   *) export PATH="$PNPM_HOME:$PATH" ;;
-# esac
-# pnpm end
-
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-# Turso
-# export PATH="/home/rasib/.turso:$PATH"
+# pnpm
+export PNPM_HOME="/home/rasib/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
 
 # bun completions
 [ -s "/home/rasib/.bun/_bun" ] && source "/home/rasib/.bun/_bun"
