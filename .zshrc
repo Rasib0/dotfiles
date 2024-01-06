@@ -124,6 +124,8 @@ alias dotfiles="cd ~/Projects/dotfiles"
 alias cls="clear"
 alias vim="nvim"
 alias py="python"
+
+alias nnotes="cd ~/Projects/Vault/ && $EDITOR"
 alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
 alias habits="dijo"
 alias reader="zathura"
