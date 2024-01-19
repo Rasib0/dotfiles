@@ -222,10 +222,12 @@ exec --no-startup-id nitrogen --restore
 # start picom
 exec_always --no-startup-id picom --restore
 
-exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
 
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
+exec_always --no-startup-id xinput set-prop "ELAN06FA:00 04F3:3248 Touchpad" "libinput Natural Scrolling Enabled" 1
 # swap with caps and esc
-exec --no-startup-id setxkbmap -option caps:swapescape
+exec_always --no-startup-id setxkbmap -option caps:swapescape
+
 # exec_always --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
 # clipboard tool
 exec greenclip daemon
@@ -300,8 +302,7 @@ client.background        $base
 # finds out, if available)
 bar {
         font pango:Ubuntu, Symbols Nerd Font 10
-        padding 1
-        position top
+        position bottom 
         status_command i3status-rs
         colors {
            background         $base

@@ -30,7 +30,7 @@ inputbar {
     children: [prompt,entry];
     background-color: @bg-col;
     border-radius: 5px;
-    padding: 2px;
+    padding: 1px;
 }
 
 prompt {

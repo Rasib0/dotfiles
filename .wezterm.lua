@@ -19,9 +19,6 @@ config.window_close_confirmation = "NeverPrompt"
 config.enable_tab_bar = false
 config.window_background_opacity = 1.00
 config.window_padding = {
-	left = 2,
-	right = 2,
-	top = 0,
 	bottom = 0,
 }
 
