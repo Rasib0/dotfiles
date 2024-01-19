@@ -242,14 +242,14 @@ bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 #
 
 
-bindsym $mod+u exec jumpapp vivaldi-stable
+bindsym $mod+u exec jumpapp $BROWSER2
 bindsym $mod+Shift+u exec jumpapp firefox-developer-edition
 
-bindsym $mod+m exec vivaldi-stable https://outlook.office.com/mail/inbox
-bindsym $mod+Shift+m exec vivaldi-stable https://gmail.com
+bindsym $mod+m exec $BROWSER2 https://outlook.office.com/mail/inbox
+bindsym $mod+Shift+m exec  $BROWSER2 https://gmail.com
 
 bindsym $mod+t exec jumpapp $TERMINAL
-bindsym $mod+Shift+t exec vivaldi-stable https://ticktick.com/webapp/#q/all/habit
+bindsym $mod+Shift+t exec $BROWSER2 -stable https://ticktick.com/webapp/#q/all/habit
     
 bindsym $mod+n workspace next
 bindsym $mod+p workspace prev
