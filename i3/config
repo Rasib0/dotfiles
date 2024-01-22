@@ -5,7 +5,7 @@
 
 set $mod Mod4
 
-# TODO: terminal env needed are BROWSER2  
+# TODO: terminal env needed are $BROWSER2, $h
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -284,7 +284,8 @@ client.background        $base
 bar {
         font pango:Ubuntu, Symbols Nerd Font 10
         position bottom 
-        status_command i3status-rs
+        status_command i3status
+        # status_command i3status-rs
         colors {
            background         $base
            statusline         $text
@@ -305,7 +306,10 @@ bar {
 # client.placeholder      #282A36 #282A36 #f8fafc #282A36   #282A36
 # client.background       #f8fafc
 
-# ----- FOR PC ----#
+# Check hostname and execute PC-specific commands
+# exec --no-startup-id hostnamectl | grep -q "rasib-82ts" && { xrandr --output eDP-1 --scale 0.93x0.93 }
+
+# --- FOR PC---#
 set $monitor_left "DP-3"
 set $monitor_right "DP-4"
 
@@ -317,5 +321,5 @@ workspace $ws5 output $monitor_left
 workspace $ws6 output $monitor_right
 workspace $ws7 output $monitor_right
 workspace $ws8 output $monitor_right
-workspace $ws9 output $monitor_right
+workspace $ws9 output $monitor_righ
 workspace $ws10 output $monitor_right
