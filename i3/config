@@ -284,8 +284,7 @@ client.background        $base
 bar {
         font pango:Ubuntu, Symbols Nerd Font 10
         position bottom 
-        status_command i3status
-        # status_command i3status-rs
+        status_command i3status-rs
         colors {
            background         $base
            statusline         $text
