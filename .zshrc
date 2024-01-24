@@ -127,7 +127,7 @@ alias py="python"
 
 alias nnotes="cd ~/Projects/Vault/ && $EDITOR"
 alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
-alias habits="dijo"
+
 alias reader="zathura"
 alias fdupes="rmlint"
 alias lg="lazygit"
@@ -137,6 +137,9 @@ alias cr="cargo run"
 alias ct="cargo test"
 alias ck="cargo check"
 
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
 function clangr() {
     _cppcompile() {
         filename="$1"
@@ -145,6 +148,10 @@ function clangr() {
     }
     _cppcompile "$1"
 }
+
+alias xrandrscaleup="xrandr --output eDP-1 --scale 0.95x0.95"
+alias xrandrscalereset="xrandr --output eDP-1 --scale 1x1"
+
 #
 #source /usr/share/nvm/init-nvm.sh
 
@@ -156,15 +163,12 @@ function clangr() {
 #  tmux attach -t default || tmux new -s default
 # fi
 
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
-
 # pnpm
-export PNPM_HOME="/home/rasib/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# export PNPM_HOME="/home/rasib/.local/share/pnpm"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
 # pnpm end
 
 # bun completions
