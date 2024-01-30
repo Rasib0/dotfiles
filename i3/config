@@ -272,7 +272,9 @@ set $base      #1e1e2e
 set $mantle    #181825
 set $crust     #11111b
 
-client.focused           $lavender $base $text  $rosewater $lavender
+
+#                        border background text indicator child_border
+client.focused           $lavender $surface1 $text  $rosewater $lavender
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
@@ -283,7 +285,7 @@ client.background        $base
 # finds out, if available)
 bar {
         font pango:Ubuntu, Symbols Nerd Font 10
-        position bottom 
+        position bottom
         status_command i3status-rs
         colors {
            background         $base
