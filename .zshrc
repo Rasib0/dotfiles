@@ -136,6 +136,7 @@ alias ls="exa"
 alias cr="cargo run"
 alias ct="cargo test"
 alias ck="cargo check"
+alias chatgpt="tgpt"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
@@ -177,3 +178,4 @@ alias xrandrscalereset="xrandr --output eDP-1 --scale 1x1"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=/home/rasib/.nimble/bin:$PATH

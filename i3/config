@@ -207,7 +207,6 @@ exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinp
 exec_always --no-startup-id xinput set-prop "ELAN06FA:00 04F3:3248 Touchpad" "libinput Natural Scrolling Enabled" 1
 # swap with caps and esc
 exec_always --no-startup-id setxkbmap -option caps:swapescape
-
 # exec_always --no-startup-id xmodmap ~/.config/i3/swapkeys -display :0
 # clipboard tool
 # TODO: greenclip, rofi emoji, flameshot
