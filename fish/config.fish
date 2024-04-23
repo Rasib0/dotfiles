@@ -11,7 +11,6 @@ alias conf='cd ~/.config/'
 alias proj ='cd ~/Projects/'
 alias home='cd ~'
 alias cls="clear"
-alias vim="nvim"
 alias nvimconfig="$EDITOR ~/.config/nvim/"
 alias fishconfig="$EDITOR ~/.config/fish/"
 alias tmuxconfig="$EDITOR ~/.tmux.conf"
