@@ -136,6 +136,7 @@ alias ls="exa"
 alias cr="cargo run"
 alias ct="cargo test"
 alias ck="cargo check"
+alias adb="~/Android/Sdk/platform-tools/adb"
 alias chatgpt="tgpt"
 
 eval "$(starship init zsh)"
