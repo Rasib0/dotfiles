@@ -2,6 +2,8 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+set -gx EDITOR nvim
+
 alias booksm='cd ~/storage/shared/Documents/Books/'
 alias notesm='cd ~/storage/shared/Documents/Vault/'
 
@@ -18,6 +20,7 @@ alias zshconfig="$EDITOR ~/.zshrc"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias swayconfig="$EDITOR ~/.config/sway/"
 alias reader="zathura"
+alias tvim ="tmux & nvim"
 
 function clangr
     function _cppcompile
