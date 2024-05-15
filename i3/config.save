@@ -14,7 +14,7 @@ set $mod Mod4
 
 
 # TODO: fonts needed 
-font pango: Inter Regular 10
+font pango: Inter Regular 10 
 # font pango:JetBrainsMono Nerd Font 9
 # font pango:DejaVu Sans Mono 9
 # font pango:monospace 8
@@ -310,8 +310,8 @@ bar {
 # exec --no-startup-id hostnamectl | grep -q "rasib-82ts" && { xrandr --output eDP-1 --scale 0.93x0.93 }
 
 # --- FOR PC---#
-set $monitor_left "DP-4"
-set $monitor_right "DP-3"
+set $monitor_left "DP-3"
+set $monitor_right "DP-4"
 
 workspace $ws1 output $monitor_left
 workspace $ws2 output $monitor_left
