@@ -34,6 +34,14 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 yay htop-vim, rofi-search, ttf-jetbrains-mono-nerd, vifm, i3status-rs, neovim, zsh, tmux
 ```
 
+## For display
+
+ARandr is the UI for xrandr
+
+## For Tablet setup
+
+xinput map-to-output "HUION Huion Tablet_H950P Pen Pen (0)" DP-3
+
 ## set brightness in arch
 
 ```bash
