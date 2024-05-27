@@ -14,7 +14,11 @@
     "lazyvim.plugins.extras.util.project"
   ],
   "news": {
+<<<<<<< HEAD
     "NEWS.md": "2123"
+=======
+    "NEWS.md": "4964"
+>>>>>>> refs/remotes/origin/main
   },
-  "version": 3
+  "version": 5
 }
