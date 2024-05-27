@@ -103,44 +103,39 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
+
+
+# config aliases
 alias roficonfig="cd ~/.config/rofi/ && $EDITOR"
 alias nvimconfig="cd ~/.config/nvim/ && $EDITOR"
 alias swayconfig="cd ~/.config/sway/ && $EDITOR"
-
-alias zshconfig="$EDITOR ~/.zshrc"
-alias i3config="$EDITOR ~/.config/i3/config"
-alias tmuxconfig="$EDITOR ~/.tmux.conf"
-alias picomconfig="$EDITOR ~/.config/picom.conf"
-alias i3rustconfig="$EDITOR ~/.config/i3status-rust/config.toml"
-alias weztermconfig="$EDITOR ~/.wezterm.lua"
-alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
-alias vifmconfig="$EDITOR ~/.config/vifm/vifmrc"
 alias firefoxconfig="$EDITOR ~/.mozilla/firefox/*.default-release/chrome/userChrome.css || $EDITOR ~/.mozilla/firefox/*.dev-edition-default/chrome/userChrome.css"
-
+alias i3rustconfig="$EDITOR ~/.config/i3status-rust/config.toml"
+alias picomconfig="$EDITOR ~/.config/picom.conf"
+alias vifmconfig="$EDITOR ~/.config/vifm/vifmrc"
+alias weztermconfig="$EDITOR ~/.wezterm.lua"
+alias i3config="$EDITOR ~/.config/i3/config"
+alias ohmyzshconfig="$EDITOR ~/.oh-my-zsh"
 alias dotfiles="cd ~/Projects/dotfiles"
+alias tmuxconfig="$EDITOR ~/.tmux.conf"
+alias zshconfig="$EDITOR ~/.zshrc"
 
 alias cls="clear"
-alias vim="nvim"
-alias py="python"
+alias adb="~/Android/Sdk/platform-tools/adb"
 
-alias nnotes="cd ~/Projects/Vault/ && $EDITOR"
 alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
 
 alias reader="zathura"
 alias fdupes="rmlint"
+alias chatgpt="tgpt"
 alias lg="lazygit"
+alias zel="zellij"
 alias ls="exa"
 
-alias cr="cargo run"
-alias ct="cargo test"
-alias ck="cargo check"
-alias adb="~/Android/Sdk/platform-tools/adb"
-alias chatgpt="tgpt"
 
-eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
+
+alias xrandrscaleup="xrandr --output eDP-1 --scale 0.95x0.95"
+alias xrandrscalereset="xrandr --output eDP-1 --scale 1x1"
 
 function clangr() {
     _cppcompile() {
@@ -151,8 +146,9 @@ function clangr() {
     _cppcompile "$1"
 }
 
-alias xrandrscaleup="xrandr --output eDP-1 --scale 0.95x0.95"
-alias xrandrscalereset="xrandr --output eDP-1 --scale 1x1"
+
+eval "$(starship init zsh)"
+eval "$(zoxide init --cmd 'cd' zsh)"
 
 #
 #source /usr/share/nvm/init-nvm.sh
