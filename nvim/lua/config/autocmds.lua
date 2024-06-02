@@ -3,3 +3,13 @@
 -- Add any additional autocmds here
 
 -- vim.cmd("silent! Copilot disable")
+
+vim.api.nvim_exec(
+  [[
+ augroup RustSettings
+     autocmd!
+     autocmd FileType rust inoremap ' '
+ augroup END
+ ]],
+  false
+)

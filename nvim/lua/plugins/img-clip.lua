@@ -6,7 +6,7 @@ return {
     -- or leave it empty to use the default settings
     --
     markdown = {
-      dir_path = "Archive/Attachments",
+      dir_path = "archive/attachments",
     },
   },
   keys = {

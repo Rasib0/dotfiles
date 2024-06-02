@@ -15,8 +15,8 @@ return {
     -- styles = {
     --       sidebars = "transparent",
     --      floats = "transparent",
+    --   },
     -- },
-    --  },
   },
   { "projekt0n/github-nvim-theme" },
   {
@@ -24,9 +24,9 @@ return {
     opts = {
       -- colorscheme = "habamax",
       -- colorscheme = "github_dark_dimmed",
+      -- colorscheme = "vscode"
+      -- colorscheme = "tokyonight",
       colorscheme = "catppuccin",
-      --      -- colorscheme = "vscode"
-      --      colorscheme = "tokyonight",
     },
   },
 }

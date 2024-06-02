@@ -5,7 +5,9 @@
 --
 -- vim.keymap.set("i", "kj", "<Esc>")
 -- vim.keymap.set("i", "jk", "<Esc>")
+
 -- I just changed .local/share/nvim/lazy/LazyVim/utils/init.lua to treesitter builtin = "find_files"
+
 -- vim.keymap.set(
 --   "n",
 --   "<leader><space>",
