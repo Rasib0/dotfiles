@@ -19,3 +19,5 @@ alias swayconfig="$EDITOR ~/.config/sway/"
 alias reader="zathura"
 alias tvim="tmux & $EDITOR"
 alias hx="helix"
+
+zoxide init fish | source
