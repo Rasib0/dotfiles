@@ -6,12 +6,10 @@
 rm ~/.tmux.conf; ln -s /home/rasib/Projects/dotfiles/components/.tmux.conf ~/.tmux.conf;
 rm ~/.config/nvim; ln -s /home/rasib/Projects/dotfiles/components/nvim ~/.config/nvim;
 rm ~/.config/fish; ln -s /home/rasib/Projects/dotfiles/components/fish ~/.config/fish;
-rm ~/.config/vifm; ln -s /home/raisib/Projects/dofiles/components/vifm ~/.config/vifm;
-
+rm ~/.config/vifm; ln -s /home/rasib/Projects/dotfiles/components/vifm ~/.config/vifm;
 ```
 
 ## Nixox
-
 ```bash
 ln -s /home/rasib/Projects/dotfiles/nixos/home-manager /home/rasib/.config/home-manager;
 sudo ln -s /home/rasib/Projects/dotfiles/nixos/configuration.nix /etc/nixos/configuration.nix;
@@ -38,17 +36,18 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 ## Environment Variables
 
 ```bash
-rm ~/.zprofile ; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.zprofile;
-rm ~/.profile ; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.profile;
+rm ~/.zprofile; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.zprofile;
+rm ~/.profile; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.profile;
 ```
 
 ## User Interface
 
 ```bash
-rm ~/.config/i3 ; ln -s /home/rasib/Projects/dotfiles/computer/i3 ~/.config/i3;
-rm ~/.config/rofi ; ln -s /home/raisib/Projects/dofiles/computer/rofi ~/.config/rofi;
-rm ~/.wezterm.lua ; ln -s /home/rasib/Projects/dotfiles/computer/.wezterm.lua ~/.wezterm.lua;
-rm ~/.config/i3status-rust ; ln -s /home/rasib/Projects/dotfiles/computer/i3status-rust ~/.config/i3status-rust;
+rm ~/.config/i3; ln -s /home/rasib/Projects/dotfiles/computer/i3 ~/.config/i3;
+rm ~/.config/rofi; ln -s /home/rasib/Projects/dotfiles/computer/rofi ~/.config/rofi;
+rm ~/.wezterm.lua; ln -s /home/rasib/Projects/dotfiles/computer/.wezterm.lua ~/.wezterm.lua;
+rm ~/.config/i3status-rust; ln -s /home/rasib/Projects/dotfiles/computer/i3status-rust ~/.config/i3status-rust;
+rm ~/.config/picom.conf; ln  -s /home/rasib/Projects/dotfiles/computer/picom.conf;
 
 ```
 
