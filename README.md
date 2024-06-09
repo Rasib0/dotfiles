@@ -3,31 +3,29 @@
 ## Must have
 
 ```bash
-rm ~/.tmux.conf ; ln -s /home/rasib/Projects/dotfiles/.tmux.conf ~/.tmux.conf
-rm ~/.config/nvim ; ln -s /home/rasib/Projects/dotfiles/nvim ~/.config/nvim
-rm ~/.config/fish ; ln -s /home/rasib/Projects/dotfiles/fish ~/.config/fish
-rm ~/.config/vifm ; ln -s /home/raisib/Projects/dofiles/vifm ~/.config/vifm
+rm ~/.tmux.conf; ln -s /home/rasib/Projects/dotfiles/components/.tmux.conf ~/.tmux.conf;
+rm ~/.config/nvim; ln -s /home/rasib/Projects/dotfiles/components/nvim ~/.config/nvim;
+rm ~/.config/fish; ln -s /home/rasib/Projects/dotfiles/components/fish ~/.config/fish;
+rm ~/.config/vifm; ln -s /home/raisib/Projects/dofiles/components/vifm ~/.config/vifm;
 
 ```
 
 ## Nixox
+
 ```bash
-ln -s /home/rasib/Projects/dotfiles/nixos/home-manager
- /home/rasib/.config/home-manager
-```
-```bash 
-sudo ln -s /home/rasib/Projects/dotfiles/nixos/configuration.nix /etc/nixos/configuration.nix
+ln -s /home/rasib/Projects/dotfiles/nixos/home-manager /home/rasib/.config/home-manager;
+sudo ln -s /home/rasib/Projects/dotfiles/nixos/configuration.nix /etc/nixos/configuration.nix;
 ```
 ## Alternates
 
 ```bash
-rm ~/.zshrc ; ln -s /home/rasib/Projects/dotfiles/.zshrc ~/.zshrc
+rm ~/.zshrc; ln -s /home/rasib/Projects/dotfiles/components/.zshrc ~/.zshrc;
 ```
 
 ## Install TPM for tmux
 
 ```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 ```
 
 # Desktop
@@ -40,17 +38,17 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ## Environment Variables
 
 ```bash
-rm ~/.zprofile ; ln -s /home/rasib/Projects/dotfiles/.profile ~/.zprofile
-rm ~/.profile ; ln -s /home/rasib/Projects/dotfiles/.profile ~/.profile
+rm ~/.zprofile ; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.zprofile;
+rm ~/.profile ; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.profile;
 ```
 
 ## User Interface
 
 ```bash
-rm ~/.config/i3 ; ln -s /home/rasib/Projects/dotfiles/i3 ~/.config/i3
-rm ~/.config/rofi ; ln -s /home/raisib/Projects/dofiles/rofi ~/.config/rofi
-rm ~/.wezterm.lua ; ln -s /home/rasib/Projects/dotfiles/.wezterm.lua ~/.wezterm.lua
-rm ~/.config/i3status-rust ; ln -s /home/rasib/Projects/dotfiles/i3status-rust ~/.config/i3status-rust
+rm ~/.config/i3 ; ln -s /home/rasib/Projects/dotfiles/computer/i3 ~/.config/i3;
+rm ~/.config/rofi ; ln -s /home/raisib/Projects/dofiles/computer/rofi ~/.config/rofi;
+rm ~/.wezterm.lua ; ln -s /home/rasib/Projects/dotfiles/computer/.wezterm.lua ~/.wezterm.lua;
+rm ~/.config/i3status-rust ; ln -s /home/rasib/Projects/dotfiles/computer/i3status-rust ~/.config/i3status-rust;
 
 ```
 

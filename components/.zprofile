@@ -1,1 +1,0 @@
-/home/rasib/Projects/dotfiles/.profile
