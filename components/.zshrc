@@ -122,9 +122,7 @@ alias zshconfig="$EDITOR ~/.zshrc"
 
 alias cls="clear"
 alias adb="~/Android/Sdk/platform-tools/adb"
-
 alias notes="cd ~/Projects/Vault/ && git pull && $EDITOR"
-
 alias reader="zathura"
 alias fdupes="rmlint"
 alias chatgpt="tgpt"
@@ -132,25 +130,12 @@ alias lg="lazygit"
 alias zel="zellij"
 alias ls="exa"
 
-
-
 alias xrandrscaleup="xrandr --output eDP-1 --scale 0.95x0.95"
 alias xrandrscalereset="xrandr --output eDP-1 --scale 1x1"
-
-function clangr() {
-    _cppcompile() {
-        filename="$1"
-        clang++ "$filename" -o a.out
-        "./a.out" < input.txt
-    }
-    _cppcompile "$1"
-}
-
 
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd 'cd' zsh)"
 
-#
 #source /usr/share/nvm/init-nvm.sh
 
 #export NVM_DIR="$HOME/.nvm"
