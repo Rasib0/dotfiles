@@ -7,5 +7,6 @@
 **/nvim/*.log
 **/nvim/data
 **/nvim/lazy-locky.json
+**/nvim/lazyvim.json
 **/vifm/vifminfo.json
 secrets.sh

@@ -1,4 +1,4 @@
-return {
+local opts = {
   {
     "epwalsh/obsidian.nvim",
     version = "*",
@@ -59,3 +59,11 @@ return {
     },
   },
 }
+
+local os_name = vim.loop.os_uname().sysname
+
+if os_name ~= "Darwin" then
+  return opts
+else
+  return {}
+end
