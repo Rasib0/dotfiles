@@ -7,13 +7,16 @@ rm ~/.tmux.conf; ln -s $HOME/Projects/dotfiles/components/.tmux.conf ~/.tmux.con
 rm ~/.config/nvim; ln -s $HOME/Projects/dotfiles/components/nvim ~/.config/nvim;
 rm ~/.config/fish; ln -s $HOME/Projects/dotfiles/components/fish ~/.config/fish;
 rm ~/.config/vifm; ln -s $HOME/Projects/dotfiles/components/vifm ~/.config/vifm;
+rm ~/.config/zellij; ln -s $HOME/Projects/dotfiles/components/zellij ~/.config/zellij;
 ```
 
-## Nixox
+## Nixos
+
 ```bash
 ln -s $HOME/Projects/dotfiles/nixos/home-manager $HOME/.config/home-manager;
 sudo ln -s $HOME/Projects/dotfiles/nixos/configuration.nix /etc/nixos/configuration.nix;
 ```
+
 ## Alternates
 
 ```bash
@@ -74,5 +77,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 git clone https://github.com/jeffreytse/zsh-vi-mode.git ~/.oh-my-zsh/custom/plugins/zsh-vi-mode;
 ```
 
+```
 
 ```
