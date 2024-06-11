@@ -66,7 +66,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/home/rasib/zsh-plugins/
 
-
+# https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+#
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -78,7 +79,7 @@ plugins=(
         zsh-completions
         zsh-vi-mode
         git
-        )
+         starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,7 +129,7 @@ alias fdupes="rmlint"
 alias chatgpt="tgpt"
 alias lg="lazygit"
 alias zel="zellij"
-alias ls="exa"
+alias ls="eza"
 
 alias xrandrscaleup="xrandr --output eDP-1 --scale 0.95x0.95"
 alias xrandrscalereset="xrandr --output eDP-1 --scale 1x1"

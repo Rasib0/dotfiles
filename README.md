@@ -3,21 +3,21 @@
 ## Must have
 
 ```bash
-rm ~/.tmux.conf; ln -s /home/rasib/Projects/dotfiles/components/.tmux.conf ~/.tmux.conf;
-rm ~/.config/nvim; ln -s /home/rasib/Projects/dotfiles/components/nvim ~/.config/nvim;
-rm ~/.config/fish; ln -s /home/rasib/Projects/dotfiles/components/fish ~/.config/fish;
-rm ~/.config/vifm; ln -s /home/rasib/Projects/dotfiles/components/vifm ~/.config/vifm;
+rm ~/.tmux.conf; ln -s $HOME/Projects/dotfiles/components/.tmux.conf ~/.tmux.conf;
+rm ~/.config/nvim; ln -s $HOME/Projects/dotfiles/components/nvim ~/.config/nvim;
+rm ~/.config/fish; ln -s $HOME/Projects/dotfiles/components/fish ~/.config/fish;
+rm ~/.config/vifm; ln -s $HOME/Projects/dotfiles/components/vifm ~/.config/vifm;
 ```
 
 ## Nixox
 ```bash
-ln -s /home/rasib/Projects/dotfiles/nixos/home-manager /home/rasib/.config/home-manager;
-sudo ln -s /home/rasib/Projects/dotfiles/nixos/configuration.nix /etc/nixos/configuration.nix;
+ln -s $HOME/Projects/dotfiles/nixos/home-manager $HOME/.config/home-manager;
+sudo ln -s $HOME/Projects/dotfiles/nixos/configuration.nix /etc/nixos/configuration.nix;
 ```
 ## Alternates
 
 ```bash
-rm ~/.zshrc; ln -s /home/rasib/Projects/dotfiles/components/.zshrc ~/.zshrc;
+rm ~/.zshrc; ln -s $HOME/Projects/dotfiles/components/.zshrc ~/.zshrc;
 ```
 
 ## Install TPM for tmux
@@ -36,18 +36,18 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 ## Environment Variables
 
 ```bash
-rm ~/.zprofile; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.zprofile;
-rm ~/.profile; ln -s /home/rasib/Projects/dotfiles/computer/.profile ~/.profile;
+rm ~/.zprofile; ln -s $HOME/Projects/dotfiles/computer/.profile ~/.zprofile;
+rm ~/.profile; ln -s $HOME/Projects/dotfiles/computer/.profile ~/.profile;
 ```
 
 ## User Interface
 
 ```bash
-rm ~/.config/i3; ln -s /home/rasib/Projects/dotfiles/computer/i3 ~/.config/i3;
-rm ~/.config/rofi; ln -s /home/rasib/Projects/dotfiles/computer/rofi ~/.config/rofi;
-rm ~/.wezterm.lua; ln -s /home/rasib/Projects/dotfiles/computer/.wezterm.lua ~/.wezterm.lua;
-rm ~/.config/i3status-rust; ln -s /home/rasib/Projects/dotfiles/computer/i3status-rust ~/.config/i3status-rust;
-rm ~/.config/picom.conf; ln  -s /home/rasib/Projects/dotfiles/computer/picom.conf;
+rm ~/.config/i3; ln -s $HOME/Projects/dotfiles/computer/i3 ~/.config/i3;
+rm ~/.config/rofi; ln -s $HOME/Projects/dotfiles/computer/rofi ~/.config/rofi;
+rm ~/.wezterm.lua; ln -s $HOME/Projects/dotfiles/computer/.wezterm.lua ~/.wezterm.lua;
+rm ~/.config/i3status-rust; ln -s $HOME/Projects/dotfiles/computer/i3status-rust ~/.config/i3status-rust;
+rm ~/.config/picom.conf; ln  -s $HOME/Projects/dotfiles/computer/picom.conf;
 
 ```
 
@@ -63,4 +63,16 @@ yay htop-vim, catppuccin-gtk-theme, rofi-search, catppuccin-cursor, ttf-jetbrain
 
 ```bash
 brightnessctl set 20%
+```
+
+### Plugins for OMZ
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions;
+git clone https://github.com/zsh-users/zsh-completions.git ~/.oh-my-zsh/custom/plugins/zsh-completions;
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting;
+git clone https://github.com/jeffreytse/zsh-vi-mode.git ~/.oh-my-zsh/custom/plugins/zsh-vi-mode;
+```
+
+
 ```
