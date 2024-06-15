@@ -77,9 +77,9 @@ plugins=(
         zsh-syntax-highlighting
         zsh-autosuggestions
         zsh-completions
-        zsh-vi-mode
+      # zsh-vi-mode
         git
-         starship)
+        starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -122,6 +122,7 @@ alias tmuxconfig="$EDITOR $HOME/.tmux.conf"
 alias zshconfig="$EDITOR $HOME/.zshrc"
 
 alias cls="clear"
+alias cat="bat"
 alias adb="$HOME/Android/Sdk/platform-tools/adb"
 alias notes="cd $HOME/Projects/Vault/ && git pull && $EDITOR"
 alias reader="zathura"
