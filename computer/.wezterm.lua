@@ -18,6 +18,10 @@ local is_darwin = function()
 	return wezterm.target_triple:find("darwin") ~= nil
 end
 
+local is_windows = function()
+	return wezterm.target_triple:find("windows") ~= nil
+end
+
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
