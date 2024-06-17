@@ -5,7 +5,7 @@
 ```bash
 rm ~/.tmux.conf; ln -s $HOME/Projects/dotfiles/components/.tmux.conf ~/.tmux.conf;
 rm ~/.config/nvim; ln -s $HOME/Projects/dotfiles/components/nvim ~/.config/nvim;
-rm ~/.config/fish; ln -s $HOME/Projects/dotfiles/components/fish ~/.config/fish;
+rm -rf ~/.config/fish; ln -s $HOME/Projects/dotfiles/components/fish ~/.config/fish;
 rm ~/.config/vifm; ln -s $HOME/Projects/dotfiles/components/vifm ~/.config/vifm;
 rm ~/.config/zellij; ln -s $HOME/Projects/dotfiles/components/zellij ~/.config/zellij;
 ```
@@ -39,18 +39,19 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm;
 ## Environment Variables
 
 ```bash
-rm ~/.zprofile; ln -s $HOME/Projects/dotfiles/computer/.profile ~/.zprofile;
-rm ~/.profile; ln -s $HOME/Projects/dotfiles/computer/.profile ~/.profile;
+rm ~/.zprofile; ln -s $HOME/Projects/dotfiles/ui/.profile ~/.zprofile;
+rm ~/.profile; ln -s $HOME/Projects/dotfiles/ui/.profile ~/.profile;
 ```
 
 ## User Interface
 
 ```bash
-rm ~/.config/i3; ln -s $HOME/Projects/dotfiles/computer/i3 ~/.config/i3;
-rm ~/.config/rofi; ln -s $HOME/Projects/dotfiles/computer/rofi ~/.config/rofi;
-rm ~/.wezterm.lua; ln -s $HOME/Projects/dotfiles/computer/.wezterm.lua ~/.wezterm.lua;
-rm ~/.config/i3status-rust; ln -s $HOME/Projects/dotfiles/computer/i3status-rust ~/.config/i3status-rust;
-rm ~/.config/picom.conf; ln  -s $HOME/Projects/dotfiles/computer/picom.conf;
+rm ~/.config/i3; ln -s $HOME/Projects/dotfiles/ui/i3 ~/.config/i3;
+rm ~/.config/rofi; ln -s $HOME/Projects/dotfiles/ui/rofi ~/.config/rofi;
+rm ~/.wezterm.lua; ln -s $HOME/Projects/dotfiles/ui/.wezterm.lua ~/.wezterm.lua;
+rm ~/.config/i3status-rust; ln -s $HOME/Projects/dotfiles/ui/i3status-rust ~/.config/i3status-rust;
+rm ~/.config/picom.conf; ln  -s $HOME/Projects/dotfiles/ui/picom.conf ~/.config/.picom.conf;
+rm ~/.Xresources; ln -s /home/rasib/Projects/dotfiles/ui/.Xresources .Xresources;
 
 ```
 

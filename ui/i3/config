@@ -14,7 +14,7 @@ set $mod Mod4
 
 
 # TODO: fonts needed 
-font pango: Inter Regular 10
+font pango: Inter Regular 11
 # font pango:JetBrainsMono Nerd Font 9
 # font pango:DejaVu Sans Mono 9
 # font pango:monospace 8
