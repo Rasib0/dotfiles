@@ -13,4 +13,11 @@ return {
       },
     },
   },
+  {
+    "hrsh7th/cmp-emoji",
+
+    otps = function(_, opts)
+      table.insert(opts.sources, { name = "emoji" })
+    end,
+  },
 }
