@@ -1,7 +1,8 @@
 return {
   { "ellisonleao/gruvbox.nvim" },
   {
-    "Mofiqul/vscode.nvim", -- opts = {
+    "Mofiqul/vscode.nvim",
+    -- opts = {
     --   transparent = true,
     --   styles = {
     --     sidebars = "transparent",
@@ -10,10 +11,11 @@ return {
     -- },
   },
   {
-    "folke/tokyonight.nvim", --   opts = {
-    -- transparent = true,
-    -- styles = {
-    --       sidebars = "transparent",
+    "folke/tokyonight.nvim",
+    -- opts = {
+    --   transparent = true,
+    --   styles = {
+    --      sidebars = "transparent",
     --      floats = "transparent",
     --   },
     -- },
