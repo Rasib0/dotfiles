@@ -120,6 +120,8 @@ alias ohmyzshconfig="$EDITOR $HOME/.oh-my-zsh"
 alias dotfiles="cd $HOME/Projects/dotfiles"
 alias tmuxconfig="$EDITOR $HOME/.tmux.conf"
 alias zshconfig="$EDITOR $HOME/.zshrc"
+alias gitconfighome='git config user.name "Rasib Nadeem" && git config user.email rasibnadeem101@gmail.com'
+alias gitconfigwork='git config user.name "Rasib Nadeem" && git config user.email rasib.nadeem@careem.com'
 
 alias cls="clear"
 alias cat="bat"
