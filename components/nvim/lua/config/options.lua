@@ -20,3 +20,8 @@
 --   vim.keymap.set({ "n", "v" }, "y", '"+y', { noremap = true, silent = true })
 --   vim.keymap.set({ "n", "v" }, "p", '"+p', { noremap = true, silent = true })
 -- end
+--
+-- This settings lets clangd to work with utf-16 files
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- capabilities.offsetEncoding = { "utf-16" }
+-- require("lspconfig").clangd.setup({ capabilities = capabilities })
